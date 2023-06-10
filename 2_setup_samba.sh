@@ -5,9 +5,11 @@ sudo apt-get install samba -y
 
 # Création des utilisateurs
 read -p "Entrez le nom d'utilisateur pour le groupe admin : " admin_user
-read -p "Entrez le nom d'utilisateur pour le groupe viewer : " viewer_user
-
+sudo adduser "${admin_user}"
 sudo smbpasswd -a "$admin_user"
+
+read -p "Entrez le nom d'utilisateur pour le groupe viewer : " viewer_user
+sudo adduser "${viewer_user}"
 sudo smbpasswd -a "$viewer_user"
 
 # Configuration de Samba
