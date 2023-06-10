@@ -135,7 +135,7 @@ Après avoir exécuté le script, vous pouvez utiliser la commande testparm pour
 
 ## **Installation Jellyfin**
 
-Ce script permet d'installer Jellyfin, un serveur multimédia,
+Ce script permet d'installer Jellyfin, un serveur multimédia.
 
 ### **Utilisation**
 
@@ -156,7 +156,9 @@ Ce script permet d'installer Jellyfin, un serveur multimédia,
 
 ## **Installation Raspap**
 
-Ce script permet d'installer Jellyfin, un serveur multimédia,
+Ce script permet d'installer RaspAp, un service qui transforme votre raspberry pi en point d'accès wifi.
+**Attention:** si vous installez RaspAp, vous ne pourrez plus vous connectez à votre réseau wifi.
+C'est possible mais à vous de chercher comment faire.
 
 ### **Utilisation**
 
