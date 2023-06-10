@@ -6,7 +6,8 @@
 - [Mise à jour de la Raspberry Pi Zero](#mise-à-jour-de-la-raspberry-pi-zero)
 - [Ajout du disque dur externe](#ajout-du-disque-dur-externe)
 - [Configuration de Samba](#configuration-de-samba)
-- [Installation des outils](#installation-des-outils)
+- [Installation Jellyfin](#installation-jellyfin)
+- [Installation de RaspAp](#installation-raspap)
 - [Accès aux services](#accès-aux-services)
 
 </br>
@@ -132,9 +133,9 @@ Après avoir exécuté le script, vous pouvez utiliser la commande testparm pour
 </br>
 </br>
 
-## **Installation des outils**
+## **Installation Jellyfin**
 
-Ce script permet d'installer Jellyfin, un serveur multimédia, ainsi que RaspAP, un point d'accès Wi-Fi pour votre Raspberry Pi Zero. Il désactive également le démarrage automatique de RaspAP.
+Ce script permet d'installer Jellyfin, un serveur multimédia,
 
 ### **Utilisation**
 
@@ -144,12 +145,32 @@ Ce script permet d'installer Jellyfin, un serveur multimédia, ainsi que RaspAP,
    > cd PiMediaCenter-main
    ```
 3. Ouvrez le script _check_wifi.sh_ et remplacer _YOUR_SSID_WIFI_ par le SSID de votre wifi
-4. Exécutez le script d'installation et de configuration de Samba :
+4. Exécutez le script d'installation de Jellyfin :
    ```bash
-   > ./3_install_tools.sh
+   > ./3_install_jellyfin.sh
    ```
-5. Le script commencera par installer Jellyfin en mettant à jour les paquets et en ajoutant les référentiels nécessaires. Ensuite, il installera RaspAP en téléchargeant le script d'installation et en l'exécutant.
-6. Une fois l'installation terminée, le démarrage automatique de RaspAP sera désactivé.
+5. Le script commencera par installer Jellyfin en mettant à jour les paquets et en ajoutant les référentiels nécessaires.
+
+</br>
+</br>
+
+## **Installation Raspap**
+
+Ce script permet d'installer Jellyfin, un serveur multimédia,
+
+### **Utilisation**
+
+1. Connectez-vous à votre Raspberry Pi Zero via un terminal ou SSH.
+2. Accédez au répertoire du référentiel :
+   ```bash
+   > cd PiMediaCenter-main
+   ```
+3. Ouvrez le script _check_wifi.sh_ et remplacer _YOUR_SSID_WIFI_ par le SSID de votre wifi
+4. Exécutez le script d'installation de Jellyfin :
+   ```bash
+   > ./3_install_jellyfin.sh
+   ```
+5. Le script commencera par installer Jellyfin en mettant à jour les paquets et en ajoutant les référentiels nécessaires.
 
 </br>
 </br>
