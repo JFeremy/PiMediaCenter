@@ -30,6 +30,6 @@ wget -q https://git.io/voEUQ -O /tmp/raspap-install.sh
 sudo bash /tmp/raspap-install.sh
 
 # Désactivation du démarrage automatique de RaspAP
-sudo systemctl disable raspap
+sudo systemctl disable raspapd.service
 
 echo "L'installation de Jellyfin et la désactivation de RaspAP au démarrage sont terminées."
