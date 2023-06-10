@@ -156,7 +156,7 @@ Ce script permet d'installer Jellyfin, un serveur multimédia, ainsi que RaspAP,
 
 ## **Accès aux services**
 
-Pour obtenir les informations d'accès aux différents services configurés sur votre Raspberry Pi Zero, veuillez consulter le fichier [SERVICE_ACCESS.md](./SERVICE_ACCESS.md) situé à la racine du référentiel. Ce fichier contient les détails nécessaires pour vous connecter et utiliser les services suivants :
+Pour obtenir les informations d'accès aux différents services configurés sur votre Raspberry Pi Zero, veuillez consulter le fichier [SERVICES_ACCESS.md](./SERVICES_ACCESS.md) situé à la racine du référentiel. Ce fichier contient les détails nécessaires pour vous connecter et utiliser les services suivants :
 
 - Samba : Accédez au partage PiMediaShared pour partager des fichiers sur votre réseau local.
 - Jellyfin : Diffusez et gérez votre collection de médias à l'aide du serveur Jellyfin.
