@@ -53,7 +53,7 @@ Ce script vous permet d'effectuer les mises à jour du système d'exploitation R
 
 1. Exécutez le script de mise à jour :
    ```bash
-   > ./setup_pi.sh
+   > ./0_setup_pi.sh
    ```
 2. Le script effectuera les mises à jour du système, du firmware et nettoiera les paquets inutiles.
 3. Après le redémarrage du Raspberry Pi, les mises à jour seront appliquées.
@@ -84,8 +84,8 @@ Ce script vous permet de configurer le montage automatique de votre disque dur.
 
 4. Exécutez le script d'ajout du disque avec les informations de celui-ci:
    ```bash
-   > sudo ./add_disque.sh [périphérique] [type_fs]
-   # sudo ./add_disque.sh /dev/sda1 ntfs
+   > sudo ./1_add_disque.sh [périphérique] [type_fs]
+   # sudo ./1_add_disque.sh /dev/sda1 ntfs
    ```
 5. Le script va créer un dossier de montage et ajouter une entrée dans le fichier `/etc/fstab` pour le montage automatique du disque dur externe. Une fois le montage terminé, vous pourrez accéder au contenu du disque dur externe dans le dossier `/media/shared/dd1`.
 
@@ -105,7 +105,7 @@ Ce script vous permet de configurer le serveur Samba sur votre Raspberry Pi Zero
    ```
 3. Exécutez le script d'installation et de configuration de Samba :
    ```bash
-   > ./setup_samba.sh
+   > ./2_setup_samba.sh
    ```
 4. Suivez les instructions pour créer les utilisateurs :
    - Entrez le nom d'utilisateur pour le groupe admin.
@@ -138,7 +138,7 @@ Ce script permet d'installer Jellyfin, un serveur multimédia, ainsi que RaspAP,
 3. Ouvrez le script _check_wifi.sh_ et remplacer _YOUR_SSID_WIFI_ par le SSID de votre wifi
 4. Exécutez le script d'installation et de configuration de Samba :
    ```bash
-   > ./install_tools.sh
+   > ./3_install_tools.sh
    ```
 5. Le script commencera par installer Jellyfin en mettant à jour les paquets et en ajoutant les référentiels nécessaires. Ensuite, il installera RaspAP en téléchargeant le script d'installation et en l'exécutant.
 6. Une fois l'installation terminée, le démarrage automatique de RaspAP sera désactivé.
