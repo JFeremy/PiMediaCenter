@@ -17,10 +17,8 @@ fs_type="$2"
 UUID=$(sudo blkid -s UUID -o value "$device")
 
 # Création du dossier de montage
-sudo mkdir /media/shared/dd1
-
-# Modification des autorisations du dossier de montage
-sudo chmod 777 /media/shared/dd1
+cd /media/
+sudo mkdir -p shared/dd1
 
 # Ajout de l'entrée dans /etc/fstab avec les informations fournies
 echo "UUID=${UUID} /media/shared/dd1 ${fs_type} defaults,auto,users,rw,nofail,noatime 0 0" | sudo tee -a /etc/fstab
