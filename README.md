@@ -51,12 +51,16 @@ Ce script vous permet d'effectuer les mises à jour du système d'exploitation R
 
 ### **Utilisation**
 
-1. Exécutez le script de mise à jour :
+1. Autorisez le script à être executé :
+   ```bash
+   > chmod 777 0_setup_pi.sh
+   ```
+2. Exécutez le script de mise à jour :
    ```bash
    > ./0_setup_pi.sh
    ```
-2. Le script effectuera les mises à jour du système, du firmware et nettoiera les paquets inutiles.
-3. Après le redémarrage du Raspberry Pi, les mises à jour seront appliquées.
+3. Le script effectuera les mises à jour du système, du firmware et nettoiera les paquets inutiles.
+4. Après le redémarrage du Raspberry Pi, les mises à jour seront appliquées.
 
 N'oubliez pas d'exécuter régulièrement ce script pour maintenir votre Raspberry Pi Zero à jour et bénéficier des dernières améliorations de Raspbian.
 
