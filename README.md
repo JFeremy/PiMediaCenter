@@ -51,6 +51,10 @@ Ce script vous permet d'effectuer les mises à jour du système d'exploitation R
 
 ### **Utilisation**
 
+0. (optionnel) Mettez à jour votre raspberry pi, cela à la fin, celui-ci va redémarrer:
+   ```bash
+   > sudo rpi-update
+   ```
 1. Autorisez le script à être executé :
    ```bash
    > chmod 777 0_setup_pi.sh

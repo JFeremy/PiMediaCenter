@@ -4,9 +4,6 @@
 sudo apt update
 sudo apt upgrade -y
 
-# Mise à jour du firmware du Raspberry Pi
-sudo rpi-update
-
 # Nettoyage des paquets inutiles
 sudo apt autoremove -y
 sudo apt autoclean
