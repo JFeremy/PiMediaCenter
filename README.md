@@ -35,6 +35,10 @@ Pour télécharger le référentiel PiMediaCenter, vous pouvez utiliser l'outil 
    ```bash
    > cd PiMediaCenter-main
    ```
+6. Vous pouvez maintenant supprimer le dossier télécharger :
+   ```bash
+   rm main.zip
+   ```
 
 Tout est prêt pour la suite.
 
@@ -47,21 +51,12 @@ Ce script vous permet d'effectuer les mises à jour du système d'exploitation R
 
 ### **Utilisation**
 
-1. Connectez-vous à votre Raspberry Pi Zero via un terminal ou SSH.
-2. Clonez ce référentiel dans votre répertoire local :
-   ```bash
-   > git clone <URL-du-référentiel>
-   ```
-3. Accédez au répertoire du référentiel :
-   ```bash
-   > cd <nom-du-référentiel>
-   ```
-4. Exécutez le script de mise à jour :
+1. Exécutez le script de mise à jour :
    ```bash
    > ./setup_pi.sh
    ```
-5. Le script effectuera les mises à jour du système, du firmware et nettoiera les paquets inutiles.
-6. Après le redémarrage du Raspberry Pi, les mises à jour seront appliquées.
+2. Le script effectuera les mises à jour du système, du firmware et nettoiera les paquets inutiles.
+3. Après le redémarrage du Raspberry Pi, les mises à jour seront appliquées.
 
 N'oubliez pas d'exécuter régulièrement ce script pour maintenir votre Raspberry Pi Zero à jour et bénéficier des dernières améliorations de Raspbian.
 
@@ -77,7 +72,7 @@ Ce script vous permet de configurer le montage automatique de votre disque dur.
 1. Connectez-vous à votre Raspberry Pi Zero via un terminal ou SSH.
 2. Accédez au répertoire du référentiel :
    ```bash
-   > cd <nom-du-référentiel>
+   > cd PiMediaCenter-main
    ```
 3. Récupérer les informations du disque :
 
@@ -106,7 +101,7 @@ Ce script vous permet de configurer le serveur Samba sur votre Raspberry Pi Zero
 1. Connectez-vous à votre Raspberry Pi Zero via un terminal ou SSH.
 2. Accédez au répertoire du référentiel :
    ```bash
-   > cd <nom-du-référentiel>
+   > cd PiMediaCenter-main
    ```
 3. Exécutez le script d'installation et de configuration de Samba :
    ```bash
@@ -138,7 +133,7 @@ Ce script permet d'installer Jellyfin, un serveur multimédia, ainsi que RaspAP,
 1. Connectez-vous à votre Raspberry Pi Zero via un terminal ou SSH.
 2. Accédez au répertoire du référentiel :
    ```bash
-   > cd <nom-du-référentiel>
+   > cd PiMediaCenter-main
    ```
 3. Ouvrez le script _check_wifi.sh_ et remplacer _YOUR_SSID_WIFI_ par le SSID de votre wifi
 4. Exécutez le script d'installation et de configuration de Samba :
